@@ -6,6 +6,6 @@ module com.examle.todolist {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
 
-    opens com.examle.todolist to javafx.fxml;
-    exports com.examle.todolist;
+    opens com.example.todolist to javafx.fxml;
+    exports com.example.todolist;
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.todolist.TodoController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20"/>
+    </padding>
+
+    <Label text="Meine ToDo-Liste" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <ListView fx:id="todoListView" VBox.vgrow="ALWAYS" />
+
+    <HBox spacing="10">
+        <TextField fx:id="titleField" promptText="Aufgabe..." HBox.hgrow="ALWAYS"/>
+        <DatePicker fx:id="deadlinePicker" prefWidth="150"/>
+        <Button text="Hinzufügen" onAction="#handleAddTodo" style="-fx-base: #2ecc71; -fx-text-fill: white;"/>
+    </HBox>
+
+    <Button text="Markierte Aufgabe löschen" onAction="#handleDeleteTodo" maxWidth="Infinity" style="-fx-base: #e74c3c; -fx-text-fill: white;"/>
+</VBox>
