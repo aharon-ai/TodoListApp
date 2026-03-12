@@ -1,0 +1,4 @@
+.done-task .text {
+    -fx-strikethrough: true;
+    -fx-fill: gray;
+}

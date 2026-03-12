@@ -1,4 +1,4 @@
-package com.example.todolist.model;
+package com.example.todolist;
 
 import java.time.LocalDate;
 
@@ -7,6 +7,7 @@ public class TodoItem {
     private String description;
     private LocalDate deadline;
     private boolean isDone;
+    private boolean done;
 
     public TodoItem(String title, String description, LocalDate deadline) {
         this.title = title;

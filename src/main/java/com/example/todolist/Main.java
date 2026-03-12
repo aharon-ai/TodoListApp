@@ -16,6 +16,7 @@ public class Main extends Application {
         stage.setTitle("Meine Todolist");
         stage.setScene(scene);
         stage.show();
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
     }
 
 }
