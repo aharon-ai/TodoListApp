@@ -14,11 +14,12 @@
 
     <ListView fx:id="todoListView" VBox.vgrow="ALWAYS" />
 
-    <HBox spacing="10">
-        <TextField fx:id="titleField" promptText="Aufgabe..." HBox.hgrow="ALWAYS"/>
-        <DatePicker fx:id="deadlinePicker" prefWidth="150"/>
-        <Button text="Hinzufügen" onAction="#handleAddTodo" style="-fx-base: #2ecc71; -fx-text-fill: white;"/>
-    </HBox>
-
-    <Button text="Markierte Aufgabe löschen" onAction="#handleDeleteTodo" maxWidth="Infinity" style="-fx-base: #e74c3c; -fx-text-fill: white;"/>
+    <VBox spacing="8">
+        <TextField fx:id="titleField" promptText="Aufgabe..." />
+        <TextField fx:id="descriptionField" promptText="Beschreibung (optional)" />
+        <HBox spacing="10">
+            <DatePicker fx:id="deadlinePicker" prefWidth="150"/>
+            <Button text="Hinzufügen" onAction="#handleAddTodo" style="-fx-base: #2ecc71; -fx-text-fill: white;" HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </VBox>
 </VBox>

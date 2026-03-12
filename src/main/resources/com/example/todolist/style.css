@@ -1,4 +1,14 @@
-.done-task .text {
-    -fx-strikethrough: true;
-    -fx-fill: gray;
+.todo-cell {
+    -fx-padding: 8px 6px;
+    -fx-border-color: transparent transparent rgba(0, 0, 0, 0.08) transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+}
+
+.todo-cell:hover {
+    -fx-background-color: rgba(46, 204, 113, 0.08);
+}
+
+.todo-cell:last-child {
+    -fx-border-width: 0;
 }

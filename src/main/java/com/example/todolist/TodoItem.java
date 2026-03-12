@@ -3,20 +3,35 @@ package com.example.todolist;
 import java.time.LocalDate;
 
 public class TodoItem {
+    private Integer id;
     private String title;
     private String description;
     private LocalDate deadline;
-    private boolean isDone;
     private boolean done;
 
+    public TodoItem() {
+        this("", "", LocalDate.now());
+    }
+
     public TodoItem(String title, String description, LocalDate deadline) {
+        this(null, title, description, deadline, false);
+    }
+
+    public TodoItem(Integer id, String title, String description, LocalDate deadline, boolean done) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.deadline = deadline;
-        this.isDone = false;
+        this.done = done;
     }
 
-    // Getter und Setter Initialisieren
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -43,16 +58,15 @@ public class TodoItem {
     }
 
     public boolean isDone() {
-        return isDone;
+        return done;
     }
 
     public void setDone(boolean done) {
-        isDone = done;
+        this.done = done;
     }
 
     @Override
     public String toString() {
-
-        return title + " (Fällig: " + deadline + ")";
+        return String.format("[%s] %s (Fällig: %s)", id == null ? "neu" : id, title, deadline);
     }
 }

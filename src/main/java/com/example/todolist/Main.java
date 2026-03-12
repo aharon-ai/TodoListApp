@@ -14,9 +14,9 @@ public class Main extends Application {
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 400, 500);
         stage.setTitle("Meine Todolist");
+        scene.getStylesheets().add(Main.class.getResource("style.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
-        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
     }
 
 }
