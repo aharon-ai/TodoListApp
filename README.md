@@ -12,11 +12,12 @@ Die Daten werden über eine **REST-API** mit einer PostgreSQL-Datenbank synchron
 
 ## 📚 Inhaltsverzeichnis
 
-- [✨ Features](#features)
-- [🛠 Installation & Setup](#installation--setup)
-- [📦 Projektstruktur](#projektstruktur)
-- [🔐 Sicherheit & Git](#sicherheit--git)
-- [🤝 Contributing](#contributing)
+- [✨ Features](#-features)
+- [🛠 Installation & Setup](#-installation--setup)
+- [📦 Projektstruktur](#-projektstruktur)
+- [🔐 Sicherheit & Git](#-sicherheit--git)
+- [🤝 Contributing](#-contributing)
+- [📜 Lizenz](#-lizenz)
 
 ---
 
