@@ -7,7 +7,8 @@ module com.example.todolist {
     requires org.kordamp.ikonli.javafx;
     requires com.google.gson;
     requires java.net.http;
+    requires io.github.cdimascio.dotenv.java;
 
-    opens com.example.todolist to javafx.fxml;
+    opens com.example.todolist to javafx.fxml, com.google.gson;
     exports com.example.todolist;
 }
